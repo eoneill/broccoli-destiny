@@ -1,0 +1,71 @@
+{
+  "name": "broccoli-destiny",
+  "version": "0.0.0",
+  "description": "A broccoli wrapper that enables output to multiple directories",
+  "main": "lib/index.js",
+  "repository": "https://github.com/eoneill/broccoli-destiny",
+  "author": "Eugene O'Neill",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint ./lib ./test",
+    "lint:fix": "eslint --fix ./lib ./test",
+    "test": "mocha"
+  },
+  "bin": {
+    "broccoli-destiny": "bin/broccoli-destiny"
+  },
+  "files": [
+    "bin/*",
+    "lib/*"
+  ],
+  "keywords": [
+    "broccoli",
+    "cli"
+  ],
+  "dependencies": {
+    "broccoli-debug": "^0.6.5",
+    "chalk": "^2.4.2",
+    "commander": "^3.0.1",
+    "console-ui": "^3.1.1",
+    "findup-sync": "^2.0.0",
+    "fs-extra": "^8.1.0",
+    "pretty-ms": "^5.0.0",
+    "resolve": "^1.12.0",
+    "walk-sync": "^2.0.2",
+    "watch-detector": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-mocha": "^6.1.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "mocha": "^6.2.0",
+    "mocha-eslint": "^5.0.0",
+    "prettier": "^1.18.2",
+    "release-it": "^12.4.1",
+    "release-it-lerna-changelog": "^1.0.3",
+    "sinon": "^7.5.0",
+    "sinon-chai": "^3.3.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "release-it": {
+    "plugins": {
+      "release-it-lerna-changelog": {
+        "infile": "CHANGELOG.md"
+      }
+    },
+    "git": {
+      "tagName": "v${version}"
+    },
+    "github": {
+      "release": true
+    }
+  },
+  "engines": {
+    "node": ">= 6.0.0"
+  }
+}
