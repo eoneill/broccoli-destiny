@@ -1,6 +1,6 @@
 {
   "name": "broccoli-destiny",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A broccoli wrapper that enables output to multiple directories",
   "main": "lib/index.js",
   "repository": "https://github.com/eoneill/broccoli-destiny",
