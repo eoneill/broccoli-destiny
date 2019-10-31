@@ -23,6 +23,7 @@
     "cli"
   ],
   "dependencies": {
+    "broccoli": "^3.2.0",
     "broccoli-debug": "^0.6.5",
     "chalk": "^2.4.2",
     "commander": "^3.0.1",
